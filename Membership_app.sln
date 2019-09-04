@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership_app", "Membership_app\Membership_app.csproj", "{772603DF-FE6B-49C9-BE85-2CD0D91FC864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership_app.Tests", "Membership_app.Tests\Membership_app.Tests.csproj", "{948BD49C-019E-43AF-8032-77129FF96C49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{772603DF-FE6B-49C9-BE85-2CD0D91FC864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772603DF-FE6B-49C9-BE85-2CD0D91FC864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772603DF-FE6B-49C9-BE85-2CD0D91FC864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772603DF-FE6B-49C9-BE85-2CD0D91FC864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948BD49C-019E-43AF-8032-77129FF96C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948BD49C-019E-43AF-8032-77129FF96C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948BD49C-019E-43AF-8032-77129FF96C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948BD49C-019E-43AF-8032-77129FF96C49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64CB3828-6D92-432E-9367-6BE0D29B7469}
+	EndGlobalSection
+EndGlobal
