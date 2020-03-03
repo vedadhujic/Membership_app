@@ -12,7 +12,7 @@ namespace Membership_app.Areas.Admin.Models
 
         public int ProductId { get; set; }
 
-        public int SubscrtiptionId { get; set; }
+        public int SubscriptionId { get; set; }
 
         public string Link {
             get
@@ -20,7 +20,7 @@ namespace Membership_app.Areas.Admin.Models
                 var s = new StringBuilder("?");
                 if (ItemId > 0) s.Append(String.Format("{0}={1}&", "itemId", ItemId));
                 if (ItemId > 0) s.Append(String.Format("{0}={1}&", "productId", ProductId));
-                if (ItemId > 0) s.Append(String.Format("{0}={1}&", "subscriptionId", SubscrtiptionId));
+                if (ItemId > 0) s.Append(String.Format("{0}={1}&", "subscriptionId", SubscriptionId));
 
                 return s.ToString().Substring(0, s.Length - 1);
             }
