@@ -12,6 +12,7 @@ using Membership_app.Models;
 
 namespace Membership_app.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ProductTypeController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
