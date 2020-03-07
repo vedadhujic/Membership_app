@@ -28,6 +28,9 @@ namespace Membership_app
 
             bundles.Add(new ScriptBundle("~/bundles/admin").Include(
                       "~/Scripts/AdminMenu.js"));
+
+            bundles.Add(new StyleBundle("~/Content/membership").Include(
+                      "~/Content/navbar.css"));
         }
     }
 }
