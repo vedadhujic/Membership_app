@@ -19,7 +19,7 @@ namespace Membership_app.Areas.Admin.Models
         [MaxLength(2048)]
         public string Description { get; set; }
 
-        [MaxLength(1048)]
+        [MaxLength(1024)]
         [DisplayName("Image Url")]
         public string ImageUrl { get; set; }
 
@@ -33,7 +33,8 @@ namespace Membership_app.Areas.Admin.Models
         [DisplayName("Product Type")]
         public ICollection<ProductType> ProductTypes { get; set; }
 
-        public string ProductType {
+        public string ProductType
+        {
             get
             {
                 return ProductTypes == null || ProductTypes.Count.Equals(0) ? String.Empty : ProductTypes.First(pt => pt.Id.Equals(ProductTypeId)).Title;

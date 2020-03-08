@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Membership_app.Models;
+using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +12,16 @@ namespace Membership_app.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var userId = Request.IsAuthenticated ? HttpContext.User.Identity.GetUserId() : null;
+
+            var model = new List<ThumbnailAreaModel>();
+            model.Add(new ThumbnailAreaModel
+            {
+                Title = "Area title",
+                Thumbnails = new List<ThumbnailModel>()
+            });
+
+            return View(model);
         }
 
         public ActionResult About()
