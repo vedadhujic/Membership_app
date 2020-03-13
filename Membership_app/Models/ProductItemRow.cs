@@ -21,6 +21,6 @@ namespace Membership_app.Models
 
         public bool IsAvailable { get; set; }
 
-        public DateTime ReleaseDate { get; set; }
+        public DateTime? ReleaseDate { get; set; }
     }
 }
