@@ -31,7 +31,9 @@ namespace Membership_app
 
             bundles.Add(new ScriptBundle("~/bundles/ui").Include(
                       "~/Scripts/carret.js",
-                      "~/Scripts/RegisterCode.js"));
+                      "~/Scripts/RegisterCode.js",
+                      "~/Scripts/RegisterUser.js",
+                      "~/Scripts/login.js"));
 
             bundles.Add(new StyleBundle("~/Content/membership").Include(
                       "~/Content/navbar.css",
@@ -39,7 +41,8 @@ namespace Membership_app
                       "~/Content/ProductContent.css",
                       "~/Content/carret.css",
                       "~/Content/RegisterCode.css",
-                      "~/Content/RegisterUser.css"));
+                      "~/Content/RegisterUser.css",
+                      "~/Content/login.css"));
         }
     }
 }
