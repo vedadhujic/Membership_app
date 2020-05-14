@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Membership_app.Models;
+using Membership_app.Extensions;
 
 namespace Membership_app
 {
@@ -19,6 +20,7 @@ namespace Membership_app
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your email service here to send an email.
+            message.Send();
             return Task.FromResult(0);
         }
     }
